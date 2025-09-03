@@ -210,8 +210,6 @@ npm run build:ios
 
 ## 📞 Soporte
 
-- 📧 **Email**: [tu-email@ejemplo.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/DanielSanR/invertmisio/issues)
 - 📖 **Documentación**: Ver `ANDROID_BUILD_FIX.md` para problemas específicos
 
 ## 📄 Licencia
