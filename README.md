@@ -91,7 +91,9 @@ invertmisio/
 │   └── theme.ts             # Configuración de tema
 ├── config/                  # Configuraciones por ambiente
 ├── scripts/                 # Scripts de construcción
-└── ANDROID_BUILD_FIX.md     # Guía de solución de problemas
+├── ANDROID_BUILD_FIX.md     # Guía general de problemas Android
+├── GRADLE_PLUGIN_FIX.md     # Solución específica Gradle plugin
+└── README.md                # Esta guía
 ```
 
 ## 📦 Scripts Disponibles
@@ -115,6 +117,14 @@ npm test              # Ejecutar tests
 
 ### Problema: "React Native Gradle Plugin no encontrado"
 **Solución automática**: El proyecto incluye configuración híbrida que funciona tanto con como sin `node_modules`.
+
+📖 **Documentación detallada**: Ver [`GRADLE_PLUGIN_FIX.md`](GRADLE_PLUGIN_FIX.md) para solución completa.
+
+**Solución rápida**:
+```bash
+npm install
+npx react-native run-android
+```
 
 ### Problema: "Archivos bloqueados en react-native-reanimated"
 ```bash
