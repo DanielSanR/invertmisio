@@ -1,0 +1,60 @@
+{
+  "name": "invertrack",
+  "displayName": "invertrack",
+  "expo": {
+    "name": "invertrack",
+    "slug": "invertrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2E7D32"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.invertrack.app",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta aplicación necesita acceso a la cámara para tomar fotos de los cultivos y problemas.",
+        "NSPhotoLibraryUsageDescription": "Esta aplicación necesita acceso a la galería para seleccionar imágenes.",
+        "NSLocationWhenInUseUsageDescription": "Esta aplicación necesita acceso a la ubicación para marcar los lotes en el mapa.",
+        "NSLocationAlwaysUsageDescription": "Esta aplicación necesita acceso a la ubicación para marcar los lotes en el mapa.",
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.invertrack.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2E7D32"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La aplicación necesita acceso a la galería para seleccionar imágenes.",
+          "cameraPermission": "La aplicación necesita acceso a la cámara para tomar fotos."
+        }
+      ]
+    ]
+  }
+}

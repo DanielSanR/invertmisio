@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(emulator:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

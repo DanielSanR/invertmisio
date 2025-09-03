@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        kotlinVersion = "1.8.0"
+
+        // We use NDK 25 which has better CMake compatibility
+        ndkVersion = "25.1.8937393"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.1")
+        // Fallback for React Native gradle plugin if includeBuild doesn't work
+        def rnGradlePlugin = file("../node_modules/@react-native/gradle-plugin")
+        if (!rnGradlePlugin.exists()) {
+            classpath("com.facebook.react:react-native-gradle-plugin:0.72.6")
+        }
+    }
+}
+
+plugins {
+    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
+}
